@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bw9-j8-mOc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Principal-->
+        <scene sceneID="30G-v9-UJc">
+            <objects>
+                <viewController title="Principal" id="S4U-wY-zOf" customClass="MainViewController" customModule="Workout_Tracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JVH-uA-ge1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-4P-92u">
+                                <rect key="frame" x="28" y="267.5" width="319" height="132"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Comienza a entrenar!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIz-LN-sXK">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="41"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF8-Ia-ROp">
+                                        <rect key="frame" x="78.5" y="91" width="162" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Seleccionar Rutina"/>
+                                        <connections>
+                                            <segue destination="nYr-Fn-HYW" kind="show" id="Q0c-rC-kr7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wj-Jb-ODI">
+                                <rect key="frame" x="137.5" y="587" width="100" height="30"/>
+                                <state key="normal" title="Cerrar sessión"/>
+                                <connections>
+                                    <action selector="cerrarSesionButtonAction:" destination="S4U-wY-zOf" eventType="touchUpInside" id="ojo-Pn-A8q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Wj-Jb-ODI" firstAttribute="centerX" secondItem="JVH-uA-ge1" secondAttribute="centerX" id="8Rv-iO-jTe"/>
+                            <constraint firstItem="Yfa-PT-85i" firstAttribute="bottom" secondItem="6Wj-Jb-ODI" secondAttribute="bottom" constant="50" id="Uab-pg-zdL"/>
+                            <constraint firstItem="Dgl-4P-92u" firstAttribute="centerX" secondItem="JVH-uA-ge1" secondAttribute="centerX" id="mUc-Iw-3VQ"/>
+                            <constraint firstItem="Dgl-4P-92u" firstAttribute="centerY" secondItem="JVH-uA-ge1" secondAttribute="centerY" id="wYw-1A-EMN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yfa-PT-85i"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Principal" id="V8i-1u-1ZD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPl-dY-23V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.2" y="-390.85457271364322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="no5-yL-FlP">
+            <objects>
+                <navigationController storyboardIdentifier="mainNC" automaticallyAdjustsScrollViewInsets="NO" id="dUw-wI-hQD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gsC-CN-fDU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xo7-0G-Bis">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S4U-wY-zOf" kind="relationship" relationship="rootViewController" id="jhC-jU-SNo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEG-i8-mtu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="-390.85457271364322"/>
+        </scene>
+        <!--Auth Controller-->
+        <scene sceneID="C9K-dC-Zr3">
+            <objects>
+                <viewController storyboardIdentifier="authController" id="bw9-j8-mOc" customClass="AuthController" customModule="Workout_Tracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uER-QR-llD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSn-np-b04">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRk-PA-zre" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Tracking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGj-II-Ge7">
+                                                <rect key="frame" x="120.5" y="40" width="134.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="PrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5sc-7b-75I">
+                                                <rect key="frame" x="32" y="140.5" width="311" height="168"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo" textAlignment="natural" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kUn-aT-bTN" customClass="UIToolbarTextField" customModule="Workout_Tracking" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
+                                                        <color key="backgroundColor" name="Background"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ojC-Om-KRo"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="PrimaryText"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" name="PrimaryText"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QB4-LK-iWz" customClass="UIToolbarTextField" customModule="Workout_Tracking" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="64" width="311" height="40"/>
+                                                        <color key="backgroundColor" name="Background"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="4c0-w1-0P1"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="PrimaryText"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" name="PrimaryText"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Upp-bB-duG">
+                                                        <rect key="frame" x="0.0" y="128" width="311" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAi-O3-IdQ" customClass="AttributedButton" customModule="Workout_Tracking" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="151.5" height="40"/>
+                                                                <state key="normal" title="Registrar">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="PrimaryText"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="registrarButtonAction:" destination="bw9-j8-mOc" eventType="touchUpInside" id="KGa-3r-sSb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-Yr-bUY" customClass="AttributedButton" customModule="Workout_Tracking" customModuleProvider="target">
+                                                                <rect key="frame" x="159.5" y="0.0" width="151.5" height="40"/>
+                                                                <color key="backgroundColor" name="PrimaryText"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <state key="normal" title="Ingresar">
+                                                                    <color key="titleColor" name="SecondaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="ingresarButtonAction:" destination="bw9-j8-mOc" eventType="touchUpInside" id="5ks-GX-uc4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="zZ5-An-kQn"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gcd-Z8-7kV">
+                                                <rect key="frame" x="32" y="348.5" width="311" height="152"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INN-nM-cuL" customClass="AttributedButton" customModule="Workout_Tracking" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="IZt-uq-4vt"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Google">
+                                                            <color key="titleColor" name="PrimaryText"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="PrimaryText"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="googleButtonAction:" destination="bw9-j8-mOc" eventType="touchUpInside" id="JgS-xE-kE2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-Hn-b1T" customClass="AttributedButton" customModule="Workout_Tracking" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="56" width="311" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="YdF-iJ-xkG"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Facebook">
+                                                            <color key="titleColor" name="PrimaryText"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="PrimaryText"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="facebookButtonAction:" destination="bw9-j8-mOc" eventType="touchUpInside" id="bfq-JV-OZu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Td-1V-umO" customClass="AttributedButton" customModule="Workout_Tracking" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="112" width="311" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="PSN-Hc-Bf3"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Apple">
+                                                            <color key="titleColor" name="PrimaryText"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="PrimaryText"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstItem="5sc-7b-75I" firstAttribute="top" secondItem="bGj-II-Ge7" secondAttribute="bottom" constant="80" id="36H-XQ-t9e"/>
+                                            <constraint firstAttribute="bottom" secondItem="gcd-Z8-7kV" secondAttribute="bottom" priority="250" constant="166.5" id="CPM-J7-YIx"/>
+                                            <constraint firstItem="gcd-Z8-7kV" firstAttribute="leading" secondItem="yRk-PA-zre" secondAttribute="leadingMargin" constant="24" id="GmN-OU-C6d"/>
+                                            <constraint firstItem="5sc-7b-75I" firstAttribute="leading" secondItem="yRk-PA-zre" secondAttribute="leadingMargin" constant="24" id="IPX-6p-pIR"/>
+                                            <constraint firstItem="bGj-II-Ge7" firstAttribute="centerX" secondItem="yRk-PA-zre" secondAttribute="centerX" id="RRf-Pk-I1T"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="gcd-Z8-7kV" secondAttribute="trailing" constant="24" id="RTe-TH-Ctn"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="5sc-7b-75I" secondAttribute="trailing" constant="24" id="Xeb-ek-IEB"/>
+                                            <constraint firstItem="bGj-II-Ge7" firstAttribute="top" secondItem="yRk-PA-zre" secondAttribute="top" constant="40" id="dcw-TZ-V21"/>
+                                            <constraint firstItem="gcd-Z8-7kV" firstAttribute="top" secondItem="5sc-7b-75I" secondAttribute="bottom" constant="40" id="hno-Wf-dP6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yRk-PA-zre" firstAttribute="leading" secondItem="NSn-np-b04" secondAttribute="leading" id="P01-vq-Qie"/>
+                                    <constraint firstAttribute="trailing" secondItem="yRk-PA-zre" secondAttribute="trailing" id="TXV-gV-zFm"/>
+                                    <constraint firstAttribute="bottom" secondItem="yRk-PA-zre" secondAttribute="bottom" id="YhQ-0J-mt7"/>
+                                    <constraint firstItem="yRk-PA-zre" firstAttribute="top" secondItem="NSn-np-b04" secondAttribute="top" id="fQ4-j2-UeP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="NSn-np-b04" firstAttribute="leading" secondItem="VfT-dw-tJv" secondAttribute="leading" id="Mo3-e8-KnG"/>
+                            <constraint firstItem="NSn-np-b04" firstAttribute="bottom" secondItem="VfT-dw-tJv" secondAttribute="bottom" id="YPh-r7-efF"/>
+                            <constraint firstItem="yRk-PA-zre" firstAttribute="width" secondItem="uER-QR-llD" secondAttribute="width" id="fUi-g1-9GE"/>
+                            <constraint firstItem="NSn-np-b04" firstAttribute="trailing" secondItem="VfT-dw-tJv" secondAttribute="trailing" id="mC2-Js-wxt"/>
+                            <constraint firstItem="NSn-np-b04" firstAttribute="top" secondItem="VfT-dw-tJv" secondAttribute="top" id="mf9-4b-Zd4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VfT-dw-tJv"/>
+                    </view>
+                    <connections>
+                        <outlet property="contrasenaTextField" destination="QB4-LK-iWz" id="KFI-y8-Kg1"/>
+                        <outlet property="correoTextField" destination="kUn-aT-bTN" id="wf2-qW-9P5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaR-y2-lm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="347.67616191904051"/>
+        </scene>
+        <!--Rutina-->
+        <scene sceneID="bhi-Zs-FOH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rutina" id="nYr-Fn-HYW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b7v-Rm-dRf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0pw-Qe-nsq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2742" y="-391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.96470588235294119" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryText">
+            <color red="0.078431372549019607" green="0.32549019607843138" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryText">
+            <color red="0.9649999737739563" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

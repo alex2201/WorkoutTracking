@@ -1,0 +1,287 @@
+[
+    {
+        "nombre": "Upper Body",
+        "duracion": 120,
+        "musculos": [
+            {
+                "nombre": "Mid Chest"
+            },
+            {
+                "nombre": "Front Delts"
+            },
+            {
+                "nombre": "Triceps"
+            },
+            {
+                "nombre": "Serratus"
+            }
+        ],
+        "secciones": [
+            {
+                "nombre": "Warm up",
+                "sets": [
+                    {
+                        "ejercicio": {
+                            "nombre": "Bench Press",
+                            "musculos": [
+                                {
+                                    "nombre": "Mid Chest"
+                                },
+                                {
+                                    "nombre": "Front Delts"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 30
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Bench Press",
+                            "musculos": [
+                                {
+                                    "nombre": "Mid Chest"
+                                },
+                                {
+                                    "nombre": "Front Delts"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 30
+                    }
+                ]
+            },
+            {
+                "nombre": "Pump",
+                "sets": [
+                    {
+                        "ejercicio": {
+                            "nombre": "Bench Press",
+                            "musculos": [
+                                {
+                                    "nombre": "Mid Chest"
+                                },
+                                {
+                                    "nombre": "Front Delts"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 60
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Push Up",
+                            "musculos": [
+                                {
+                                    "nombre": "Mid Chest"
+                                },
+                                {
+                                    "nombre": "Front Delts"
+                                }
+                            ]
+                        },
+                        "repeticiones": 15,
+                        "peso": 0
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Bench Press",
+                            "musculos": [
+                                {
+                                    "nombre": "Mid Chest"
+                                },
+                                {
+                                    "nombre": "Front Delts"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 60
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Push Up",
+                            "musculos": [
+                                {
+                                    "nombre": "Mid Chest"
+                                },
+                                {
+                                    "nombre": "Front Delts"
+                                }
+                            ]
+                        },
+                        "repeticiones": 15,
+                        "peso": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "nombre": "Lower Body",
+        "duracion": 150,
+        "musculos": [
+            {
+                "nombre": "Quads"
+            },
+            {
+                "nombre": "Femoral"
+            },
+            {
+                "nombre": "Gluteus"
+            }
+        ],
+        "secciones": [
+            {
+                "nombre": "Warm up",
+                "sets": [
+                    {
+                        "ejercicio": {
+                            "nombre": "Splits",
+                            "musculos": [
+                                {
+                                    "nombre": "Quads"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 0
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Splits",
+                            "musculos": [
+                                {
+                                    "nombre": "Quads"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 0
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Splits",
+                            "musculos": [
+                                {
+                                    "nombre": "Quads"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 0
+                    }
+                ]
+            },
+            {
+                "nombre": "Pump",
+                "sets": [
+                    {
+                        "ejercicio": {
+                            "nombre": "Squad",
+                            "musculos": [
+                                {
+                                    "nombre": "Quad"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Core"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 60
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Squad",
+                            "musculos": [
+                                {
+                                    "nombre": "Quad"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Core"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 60
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Squad",
+                            "musculos": [
+                                {
+                                    "nombre": "Quad"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Core"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 60
+                    },
+                    {
+                        "ejercicio": {
+                            "nombre": "Squad",
+                            "musculos": [
+                                {
+                                    "nombre": "Quad"
+                                },
+                                {
+                                    "nombre": "Gluteus"
+                                },
+                                {
+                                    "nombre": "Femoral"
+                                },
+                                {
+                                    "nombre": "Core"
+                                }
+                            ]
+                        },
+                        "repeticiones": 10,
+                        "peso": 60
+                    }
+                ]
+            }
+        ]
+    }
+]
